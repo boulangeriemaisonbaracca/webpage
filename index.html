@@ -16,6 +16,29 @@
 			list-style: none;
 			padding-left: 0;
 		}
+		.color-baracca {
+			border: none;
+		}
+		.color-baracca a {
+			text-decoration: none;
+			color: #000000;
+		}
+		.color-baracca.main-btn {
+			background-color: #d39f8b;
+			border-color: #d39f8b;
+		}
+		.color-baracca:hover {
+			background-color: #d39f8b;
+			border-color: #d39f8b;
+		}
+		.color-baracca.main-btn:hover {
+			background-color: #000000;
+			color: #ffffff;
+			border-color: #000000;
+		}
+		.color-baracca.main-btn a:hover {
+			color: #ffffff;
+		}
 	</style>
 </head>
 
@@ -26,14 +49,19 @@
 				<h1>Boulangerie-Pâtisserie <br />Maison BARACCA <br />HOUILLES</h1>
 				<p>83 Ter Bd Henri Barbusse D308, 78800 Houilles</p>
 				<section id="order" class="mb-4">
-					<p class="mb-0">Pour toutes commandes :</p>
-					<a href="tel:09 83 43 72 67">
-						09 83 43 72 67
-					</a>
-					<br />
-					<a href="mailto:contact@boulangeriehouilles.fr">
-						contact@boulangeriehouilles.fr
-					</a>
+					<p>Pour toutes commandes :</p>
+					<div class="d-grid gap-2 col-6 mx-auto">
+						<button type="button" class="btn color-baracca main-btn">
+							<a href="tel:+33 9 83 43 72 67">
+								09 83 43 72 67
+							</a>
+						</button>
+						<button type="button" class="btn color-baracca">
+							<a href="mailto:contact@boulangeriehouilles.fr">
+								contact@boulangeriehouilles.fr
+							</a>
+						</button>
+					</div>
 				</section>
 				<img src="photo-boulangerie-cropped.jpg" class="img-fluid" />
 				<p id="description" class="mt-4">Retrouvez de délicieuses baguettes, pains, gâteaux, viennoiseries et
